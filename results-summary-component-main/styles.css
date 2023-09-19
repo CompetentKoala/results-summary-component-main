@@ -1,0 +1,261 @@
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+ body{
+    margin:0px;
+    background-color: white;
+
+ }
+.container-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.container-surrounding{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 500px;
+    z-index: 2;
+    box-shadow: 20px 20px 50px -25px hsl(222, 85%, 85%);
+    border-radius: 15px;
+}
+.results-main{ 
+   background-image:linear-gradient(180deg,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: white;
+    box-shadow: 0 0 100000px;
+    z-index: 300;
+}
+
+.summary-main{
+    background-color: white;
+    color: black;
+    z-index: 200;
+
+}
+
+.results-main, .summary-main{
+    width: 250px;
+    height: 350px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Hanken Grotesk;
+    border-radius: 15px;
+    z-index: 3;
+ 
+
+}
+.your-result{
+    margin-top: 30px;
+    font-size: 18px;
+    opacity: .75;
+    z-index: 200;
+}
+
+.result-number p{
+    margin-top: 50px;
+    margin-left: 43px;
+    font-size: 25px;
+    position: absolute;
+    line-height: 25px;
+    
+}
+
+.seventy{
+    font-size: 50px;
+    font-weight: 800;
+}
+.hundred{
+    font-size: 13px;
+    margin-left:-2px;
+
+}
+.number-circle{
+    margin-top: 30px;
+    margin-left: 55px;
+    
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)) ; 
+    border-radius: 70px;
+    height: 140px;
+    width:140px;
+    border: none;
+}
+
+.result-status{
+    margin-top: -20px;
+    font-size: 25px;;
+}
+
+.result-info{
+    margin-top: -15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    opacity: .5;
+}
+.summary{
+    text-align: left;
+    margin-left: 30px;
+    font-weight: 800;
+    font-size: 18px;
+    opacity: .7;
+}
+
+.summary-box1, .summary-box2, .summary-box3, .summary-box4 {
+    height: 40px;
+    width: 185px;
+    margin-left: 30px;
+    border-radius:8px ;
+    margin-bottom: 15px;
+
+}
+.reaction p, .memory p, .verbal p, .visual p{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+
+.summary-box1{
+    position: relative;
+    background-color: hsla(0, 100%, 67%, 0.072);
+}
+.summary-box2{
+    position: relative;
+    background-color: hsla(39, 100%, 56%, 0.093);
+}
+.summary-box3{
+    position: relative;
+    background-color: hsla(166, 100%, 37%, 0.146);
+}
+.summary-box4{
+    position: relative;
+    background-color: hsla(234, 85%, 45%, 0.114);
+}
+
+.summary-box1 p{
+    color: hsl(0, 62%, 56%);
+}
+.summary-box2 p{
+    color: hsl(39, 79%, 49%);
+}
+.summary-box3 p{
+    color: hsl(166, 97%, 31%);
+}
+.summary-box4 p{
+    color: hsl(234, 85%, 45%);
+}
+
+.summary-numbers{
+    color: black;
+    margin-left: 45px;
+}
+
+.summary-numbers2{
+    color: black;
+    margin-left: 36px;
+}
+
+.of-hundred{
+    opacity: .5;
+}
+
+button{
+    font-family: Hanken Grotesk;
+    border-radius: 30px;
+    height: 35px;
+    width: 185px;
+    margin-top: 10px;
+    background-color:hsl(224, 30%, 27%) ;
+    color: rgb(255, 255, 255, .75);
+    border: none;
+    cursor: pointer;
+    transition: .4s linear;
+    position: relative;
+    z-index: 1;
+}
+button:hover{
+    color: hsl(224, 30%, 27%);
+    background-color: rgba(255, 255, 255, 0.75) ;
+    border-color: hsl(224, 30%, 27%);
+    border-style: solid;
+
+}
+.icon-place{
+    height:5px;
+    position: absolute;
+    left:10px;
+    top: 13px
+}
+
+.icon{
+    height: 15px;
+}
+
+@media screen and (max-width: 600px){
+    .body{
+        background-color: black;
+    }
+    .container-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        z-index: 1;
+        background-color: black;
+    }
+    .results-main, .summary-main{
+            width: 250px;
+            height: 350px;
+            margin-top: 0px;
+            margin-bottom: 0x;
+            text-align: center;
+            font-size: 12px;
+            font-family: Hanken Grotesk;
+            border-radius: 15px;
+            z-index: 3;
+}
+.container-surrounding{
+    position: absolute;
+    top:0;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 250px;
+    z-index: 2;
+    box-shadow: 20px 20px 1000px -25px hsl(222, 85%, 85%);
+    border-radius: 15px;
+}
+
+}
+/*
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27% 
+
+Hanken Grotesk
+
+*/
